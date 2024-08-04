@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect("Your MongoDB URI link", {
+mongoose.connect("mongodb+srv://cs50tharindu:tj9aQM5ET1uwWcnU@stocklist.o2hwnc0.mongodb.net/Stocks", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -23,7 +23,7 @@ const stockShema = new mongoose.Schema({
   symbol: String,
 });
 
-const Stock = mongoose.model("Stock", stockShema);
+const Stock = mongoose.model("Stocks", stockShema);
 
 app.get("/api/stocks", async (req, res) => {
   try {
@@ -35,7 +35,7 @@ app.get("/api/stocks", async (req, res) => {
   }
 });
 
-app.post("api/watchlist", async (req, res) => {
+app.post("/api/watchlist", async (req, res) => {
   try {
     const {
       company,
