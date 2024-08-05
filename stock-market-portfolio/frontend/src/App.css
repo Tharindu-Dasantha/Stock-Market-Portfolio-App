@@ -1,0 +1,78 @@
+:root {
+  --background-color: #fff;
+  --button-color: #8236fd;
+  --title-color: #000;
+  --subTitle-color: #373535;
+  --text-color: #e6e6e6;
+  --item-background-color: #0e0741;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--title-color);
+}
+
+h2 {
+  color: var(--subTitle-color);
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--item-background-color);
+  color: var(--text-color);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a172ed;
+  color: #fff;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #8236fd;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #d9d7ca;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
