@@ -3,6 +3,7 @@
 # dependencies
 stock-market-portfolio/backend/node_modules
 stock-market-portfolio/frontend/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
