@@ -25,12 +25,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # Remove the .env file from github
-backend/.env
-frontend/.env
+stock-market-portfolio/backend/.env
+stock-market-portfolio/frontend/.env
 .env
 
-# add the nodemon.json file to the gitignore
-backend/node_modules
-backend/package-lock.json
-frontend/node_modules
-frontend/package-lock.json
+# add the package-lock files to the gitignore
+stock-market-portfolio/backend/package-lock.json
+stock-market-portfolio/backend/pnpm-lock.yaml
+
+stock-market-portfolio/frontend/package-lock.json
+stock-market-portfolio/frontend/pnpm-lock.yaml
