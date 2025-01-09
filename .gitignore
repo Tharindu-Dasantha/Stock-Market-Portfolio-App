@@ -26,3 +26,10 @@ yarn-error.log*
 
 # Remove the .env file from github
 .env
+
+
+# add the nodemon.json file to the gitignore
+backend/node_modules
+backend/package-lock.json
+frontend/node_modules
+frontend/package-lock.json
